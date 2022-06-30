@@ -52,7 +52,7 @@ Shell Command Notes
 
  `db.insertMany({{},{},{}})`: inserts many objects at once because this is a NON-RELATIONAL system, we can put whatever we want in any document - as opposed to a reational database with a strict data model
 
- `db.collectionName.update({key:'value'},
+ `db.collectionName.update({key:'value'}`,
                 {
                     key:'value',
                     key:'value'
@@ -64,7 +64,7 @@ Shell Command Notes
                 }`
          : will insert the object if it's not already there
 
-`db.collectionName.update({key:'value'},
+`db.collectionName.update({key:'value'}`,
                 {
                     $set: {key:'value',
                     key:'value'
@@ -73,4 +73,3 @@ Shell Command Notes
                 
           : will update the key/value specified or add a key/value; usually you want to use the ID; Note that `$set` is really important here
 
-'db.post.test':this is a test note
