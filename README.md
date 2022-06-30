@@ -72,3 +72,5 @@ Shell Command Notes
                 })`
                 
           : will update the key/value specified or add a key/value; usually you want to use the ID; Note that `$set` is really important here
+
+'db.post.test':this is a test note
