@@ -42,28 +42,29 @@ Shell Command Notes
                 
 ### Manipulating Data
 
-        - `use dbs`: checks out from db list OR creates a new db and checks it out *if nothing is in the db, it will NOT show up on the list of dbs under show dbs*
+ `use dbs`: checks out from db list OR creates a new db and checks it out *if nothing is in the db, it will NOT show up on the list of dbs under show dbs*
 
-        - `use dbname`: checks out a db
+ `use dbname`: checks out a db
 
-        - `db.dropDatabase()`: deletes the database you have checked out
+ `db.dropDatabase()`: deletes the database you have checked out
 
-        - `db.insert({object})`: inserts an object
+ `db.insert({object})`: inserts an object
 
-         - `db.insertMany({{},{},{}})`: inserts many objects at once *because this is a NON-RELATIONAL system, we can put whatever we want in any document (as opposed to a reational database with a strict data model)
+ `db.insertMany({{},{},{}})`: inserts many objects at once because this is a NON-RELATIONAL system, we can put whatever we want in any document - as opposed to a reational database with a strict data model
 
-         - `db.collectionName.update({key:'value'},
+ `db.collectionName.update({key:'value'},
                 {
                     key:'value',
                     key:'value'
-                })`,
+                })`
+                
          : will replace the entire thing; usually you want to use the ID
             -add `{
                     upsert:true
                 }`
          : will insert the object if it's not already there
 
-         - `db.collectionName.update({key:'value'},
+`db.collectionName.update({key:'value'},
                 {
                     $set: {key:'value',
                     key:'value'
