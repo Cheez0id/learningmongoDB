@@ -12,7 +12,9 @@ A repo to play around with mongo/mongoDB
 
 ## Shell Commands 
 Shell Command Notes 
-    **Viewing Data**
+
+    ###Viewing Data
+
         - show dbs: list of dbs in this system *if nothing is in the db, it will NOT show up on the list of dbs under show dbs
 
         - show collections: shows the collections/*documents*inside the checked out db
