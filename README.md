@@ -11,9 +11,9 @@ A repo to play around with mongo/mongoDB
 
 
 ## Shell Commands 
-Shell Command Notes 
+Shell Command Notes
 
-    ###Viewing Data
+### Viewing Data
 
         - show dbs: list of dbs in this system *if nothing is in the db, it will NOT show up on the list of dbs under show dbs
 
@@ -40,8 +40,8 @@ Shell Command Notes
                             pikachu 2 news
                             pikachu 2 entertainment
                 
-*
-    **Manipulating Data**
+###Manipulating Data
+
         - `use dbs`: checks out from db list OR creates a new db and checks it out *if nothing is in the db, it will NOT show up on the list of dbs under show dbs*
 
         - `use dbname`: checks out a db
