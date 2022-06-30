@@ -17,17 +17,28 @@ Shell Command Notes
 
         - show collections: shows the collections/*documents*inside the checked out db
         - db.collectionName.find(): shows all the objects in the colletion
-            - *db.collectionName.find().pretty(): makes that data easier to read!*
+            - .pretty(): makes that data easier to read!*
 
         - db.collectionName.find({key:'value'}): show objects in collection that match object information written in the paramater
-            - *db.collectionName.find({key:'value'}).pretty(): makes that data easier to read!*
             
         - db.collectionName.find().sort({key:1 or -1}): show objects in collection and sorts them by the field we want to sort by, and put 1 or -1 for ascending and descending *alphabetically*
-            - *db.collectionName.sort({key:1 or -1}).pretty(): makes that data easier to read!*
 
         - db.collectionName.find({key:'value';}).count(): shows number of objects with that value
 
         -db.collectionName.find().limit(#): shows list of objects limited to the number specified in the limit method
+
+        - db.collectionName.find().sort({key:1 or -1}).limit(): show objects in collection and sorts them by the field we want to sort by, and put 1 or -1 for ascending and descending *alphabetically*; limited to the number specified in the limit method
+
+        - db.collectionName.find().forEach(function(pikachu){print('string'+ pikachu.title)}): prints out a list of the specified values.  NOTE: the 'string' at the beginning is an option but could be useful when printing
+                Ex: `db.posts.find().forEach(function(pikachu){print('pikachu2'+ pikachu.category)})`
+                will print: pikachu 2news
+                            pikachu 2technology
+                            pikachu 2news
+                            pikachu 2entertainment
+                
+        
+
+
 *
     **Manipulating Data**
         - use dbs: checks out from db list OR creates a new db and checks it out *if nothing is in the db, it will NOT show up on the list of dbs under show dbs*
