@@ -79,4 +79,4 @@ Shell Command Notes
 
 `db.collectionName.remove({key:'value'})` :removes a thingy
 
-### Manipulating Data - Sub-Documents
+### Manipulating Data - Sub-Documents [MongoDB Crash Course](https://youtu.be/-56x56UppqQ?t=1360)
