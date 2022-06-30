@@ -4,7 +4,7 @@ A repo to play around with mongo/mongoDB
 # Process
 1. Installed Mongo using https://coding-boot-camp.github.io/full-stack/mongodb/how-to-install-mongodb
     - this also installed compass, but I installed it previously not realizing that I needed to install mongo PATH
-2. Reviewing youtube tutorial to get started
+2. Reviewing [MongoDB Crash Course Youtube Tutorial](https://youtu.be/-56x56UppqQ) to get started
     - reviewing structure/syntax of **JSON** object.
     - briefly used mongoDB Compass UI to create *documents* / **REVIEW verbage: documents and collections**
 3. Reviewing mongo shell commands
