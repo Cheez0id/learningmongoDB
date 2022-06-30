@@ -64,7 +64,7 @@ Shell Command Notes
                 }`
          : will insert the object if it's not already there
 
-`db.collectionName.update({key:'value'}`,
+`db.collectionName.update({key:'value'}`
                 {
                     $set: {key:'value',
                     key:'value'
@@ -73,3 +73,10 @@ Shell Command Notes
                 
           : will update the key/value specified or add a key/value; usually you want to use the ID; Note that `$set` is really important here
 
+`db.collectionName.update({key:'value'}, {$inc: {key: integer}})` :will incriment a number value - this is great for something like "likes" on posts
+
+`db.collectionName.update({key:'value'}, {$remame: { originalKey: 'newKey'}})` : you can rename 
+
+`db.collectionName.remove({key:'value'})` :removes a thingy
+
+### Manipulating Data - Sub-Documents
